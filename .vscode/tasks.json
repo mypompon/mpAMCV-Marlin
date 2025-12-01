@@ -2,23 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      // 1) Build Marlin pour la SKR PRO (build "classique")
-      "label": "PIO Build BIGTREE_SKR_PRO",
-      "type": "shell",
-      "command": "platformio",
-      "args": [
-        "run",
-        "-e",
-        "BIGTREE_SKR_PRO"
-      ],
-      "group": "build",
-      "problemMatcher": [
-        "$gcc"
-      ]
-    },
-    {
-      // 2) Build + Upload via ST-Link (en utilisant l'env STLINK)
-      "label": "PIO Upload BIGTREE_SKR_PRO_STLINK",
+      "label": "Build & Flash SKR PRO (ST-Link)",
       "type": "shell",
       "command": "platformio",
       "args": [
@@ -28,23 +12,11 @@
         "-t",
         "upload"
       ],
-      "group": "none",
-      "problemMatcher": [
-        "$gcc"
-      ]
-    },
-    {
-      // 3) Tâche COMPOSÉE : Build normal puis Upload ST-Link
-      "label": "Build & Flash SKR PRO (ST-Link)",
-      "dependsOn": [
-        "PIO Build BIGTREE_SKR_PRO",
-        "PIO Upload BIGTREE_SKR_PRO_STLINK"
-      ],
-      "dependsOrder": "sequence",
       "group": {
         "kind": "build",
         "isDefault": true
-      }
+      },
+      "problemMatcher": ["$gcc"]
     }
   ]
 }
