@@ -1,7 +1,6 @@
-#define SPINDLE_LASER_ENA_PIN PB0 // Heater2
+#define SPINDLE_LASER_ENA_PIN PF9 
 #define SPINDLE_LASER_PWM_PIN PC9
-#define SPINDLE_LASER_PWM_PIN PC9
-#define SPINDLE_LASER_ENA_PIN PB0 // Heater2
+
 /**
  * Marlin 3D Printer Firmware
  * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
