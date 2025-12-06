@@ -1,5 +1,6 @@
 #define SPINDLE_LASER_ENA_PIN PF9 
 #define SPINDLE_LASER_PWM_PIN PC9
+#define COOLANT_FLOOD_PIN PC4
 
 /**
  * Marlin 3D Printer Firmware
