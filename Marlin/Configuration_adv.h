@@ -1576,8 +1576,8 @@
   // LCD's font must contain the characters. Check your selected LCD language.
   //#define UTF_FILENAME_SUPPORT
 
-  //#define LONG_FILENAME_HOST_SUPPORT    // Get the long filename of a file/folder with 'M33 <dosname>' and list long filenames with 'M20 L'
-  //#define LONG_FILENAME_WRITE_SUPPORT   // Create / delete files with long filenames via M28, M30, and Binary Transfer Protocol
+  #define LONG_FILENAME_HOST_SUPPORT    // Get the long filename of a file/folder with 'M33 <dosname>' and list long filenames with 'M20 L'
+  #define LONG_FILENAME_WRITE_SUPPORT   // Create / delete files with long filenames via M28, M30, and Binary Transfer Protocol
 
   //#define SCROLL_LONG_FILENAMES         // Scroll long filenames in the SD card menu
 
@@ -2009,7 +2009,7 @@
  *
  * Warning: Does not respect endstops!
  */
-#define BABYSTEPPING
+//#define BABYSTEPPING
 #if ENABLED(BABYSTEPPING)
   //#define INTEGRATED_BABYSTEPPING         // EXPERIMENTAL integration of babystepping into the Stepper ISR
   //#define BABYSTEP_WITHOUT_HOMING
@@ -3675,7 +3675,7 @@
 /**
  * Auto-report temperatures with M155 S<seconds>
  */
-#define AUTO_REPORT_TEMPERATURES
+//#define AUTO_REPORT_TEMPERATURES
 #if ENABLED(AUTO_REPORT_TEMPERATURES) && TEMP_SENSOR_REDUNDANT
   //#define AUTO_REPORT_REDUNDANT // Include the "R" sensor in the auto-report
 #endif
@@ -3683,7 +3683,7 @@
 /**
  * Auto-report position with M154 S<seconds>
  */
-#define AUTO_REPORT_POSITION
+//#define AUTO_REPORT_POSITION
 
 /**
  * Include capabilities in M115 output
@@ -3739,7 +3739,7 @@
 //#define M114_REALTIME       // Real current position based on forward kinematics
 //#define M114_LEGACY         // M114 used to synchronize on every call. Enable if needed.
 
-#define REPORT_FAN_CHANGE     // Report the new fan speed when changed by M106 (and others)
+//#define REPORT_FAN_CHANGE     // Report the new fan speed when changed by M106 (and others)
 
 // @section gcode
 
